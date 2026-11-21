@@ -59,6 +59,8 @@ struct AnimeDetailView: View {
                         .foregroundStyle(.secondary)
                 }
 
+                demoEpisodesSection
+
                 Text("Synopsis").font(.title2.bold())
                 Text(detailViewModel?.anime?.synopsis ?? anime.synopsis ?? "No synopsis available.")
                     .font(.body)
@@ -87,6 +89,55 @@ struct AnimeDetailView: View {
                 detailViewModel = DetailViewModel(animeID: anime.id, repository: dependencies.repository)
             }
             await detailViewModel?.load()
+        }
+    }
+
+
+    private var demoEpisodesSection: some View {
+        let episodes = dependencies.streamingRepository.episodes(for: detailViewModel?.anime ?? anime)
+        return VStack(alignment: .leading, spacing: 10) {
+            HStack {
+                Text("Episodes")
+                    .font(.title2.bold())
+                Spacer()
+                Text("DEMO")
+                    .font(.caption.bold())
+                    .foregroundStyle(.orange)
+            }
+
+            Text("Sample videos are used to demonstrate playback. They are not actual anime episodes.")
+                .font(.footnote)
+                .foregroundStyle(.secondary)
+
+            ForEach(episodes) { episode in
+                NavigationLink {
+                    DemoEpisodePlayerView(
+                        anime: detailViewModel?.anime ?? anime,
+                        episodes: episodes,
+                        initialEpisode: episode.number
+                    )
+                } label: {
+                    HStack(spacing: 12) {
+                        Image(systemName: "play.circle.fill")
+                            .font(.title2)
+                            .foregroundStyle(.tint)
+                        VStack(alignment: .leading, spacing: 3) {
+                            Text(episode.title)
+                                .font(.subheadline.weight(.semibold))
+                            Text("Public sample footage")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .font(.caption.weight(.semibold))
+                            .foregroundStyle(.tertiary)
+                    }
+                    .padding(12)
+                    .background(.secondary.opacity(0.08), in: RoundedRectangle(cornerRadius: 12))
+                }
+                .buttonStyle(.plain)
+            }
         }
     }
 
