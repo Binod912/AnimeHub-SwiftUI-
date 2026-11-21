@@ -1,0 +1,49 @@
+// !$*UTF8*$!
+{
+ archiveVersion = 1;
+ classes = {};
+ objectVersion = 60;
+ objects = {
+  A10000000000000000000001 /* Project object */ = {
+   isa = PBXProject;
+   attributes = { BuildIndependentTargetsInParallel = 1; LastUpgradeCheck = 1500; };
+   buildConfigurationList = A10000000000000000000009;
+   compatibilityVersion = "Xcode 14.0";
+   developmentRegion = en;
+   hasScannedForEncodings = 0;
+   knownRegions = (en, Base);
+   mainGroup = A10000000000000000000002;
+   productRefGroup = A10000000000000000000003;
+   projectDirPath = "";
+   projectRoot = "";
+   targets = (A10000000000000000000004);
+  };
+  A10000000000000000000002 = { isa = PBXGroup; children = (A10000000000000000000005, A10000000000000000000006); sourceTree = "<group>"; };
+  A10000000000000000000003 = { isa = PBXGroup; children = (A10000000000000000000007); name = Products; sourceTree = "<group>"; };
+  A10000000000000000000004 /* AnimeHub */ = {
+   isa = PBXNativeTarget;
+   buildConfigurationList = A10000000000000000000010;
+   buildPhases = (A1000000000000000000000B, A1000000000000000000000C, A1000000000000000000000D);
+   buildRules = ();
+   dependencies = ();
+   name = AnimeHub;
+   productName = AnimeHub;
+   productReference = A10000000000000000000007;
+   productType = "com.apple.product-type.application";
+   fileSystemSynchronizedGroups = (A10000000000000000000005);
+  };
+  A10000000000000000000005 /* AnimeHub */ = { isa = PBXFileSystemSynchronizedRootGroup; path = AnimeHub; sourceTree = "<group>"; };
+  A10000000000000000000006 /* Products group placeholder */ = { isa = PBXGroup; children = (); name = "Supporting Files"; sourceTree = "<group>"; };
+  A10000000000000000000007 /* AnimeHub.app */ = { isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+  A10000000000000000000008 = { isa = XCConfigurationList; buildConfigurations = (A10000000000000000000011, A10000000000000000000012); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  A10000000000000000000009 = { isa = XCConfigurationList; buildConfigurations = (A10000000000000000000013, A10000000000000000000014); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  A1000000000000000000000B /* Sources */ = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+  A1000000000000000000000C /* Frameworks */ = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+  A1000000000000000000000D /* Resources */ = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+  A10000000000000000000011 /* Debug */ = { isa = XCBuildConfiguration; buildSettings = { IPHONEOS_DEPLOYMENT_TARGET = 17.0; SWIFT_VERSION = 5.9; PRODUCT_BUNDLE_IDENTIFIER = com.example.AnimeHub; PRODUCT_NAME = "$(TARGET_NAME)"; TARGETED_DEVICE_FAMILY = "1,2"; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; }; name = Debug; };
+  A10000000000000000000012 /* Release */ = { isa = XCBuildConfiguration; buildSettings = { IPHONEOS_DEPLOYMENT_TARGET = 17.0; SWIFT_VERSION = 5.9; PRODUCT_BUNDLE_IDENTIFIER = com.example.AnimeHub; PRODUCT_NAME = "$(TARGET_NAME)"; TARGETED_DEVICE_FAMILY = "1,2"; GENERATE_INFOPLIST_FILE = YES; }; name = Release; };
+  A10000000000000000000013 /* Project Debug */ = { isa = XCBuildConfiguration; buildSettings = { SDKROOT = iphoneos; }; name = Debug; };
+  A10000000000000000000014 /* Project Release */ = { isa = XCBuildConfiguration; buildSettings = { SDKROOT = iphoneos; }; name = Release; };
+ };
+ rootObject = A10000000000000000000001;
+}
