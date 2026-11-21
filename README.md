@@ -18,7 +18,10 @@ No API key or third-party package is required. Data comes from the public Jikan 
 - Top anime feed from Jikan
 - Pull to refresh and pagination
 - Search with debounce and pagination
-- Anime detail view
+- Anime detail view with a demo episode list
+- Native AVPlayer playback with built-in play/pause, seeking, and fullscreen controls
+- Previous/next demo episode navigation
+- Watch position saved locally with SwiftData and restored when reopening an episode
 - Favorites and watchlist persisted with SwiftData
 - Profile preferences
 - Loading, empty, and error states
@@ -27,5 +30,7 @@ No API key or third-party package is required. Data comes from the public Jikan 
 ## Notes
 - Jikan is a community API for MyAnimeList data. It has rate limits; avoid rapid repeated requests.
 - The reminders toggle is currently a saved preference only; local notification scheduling is not implemented.
-- Streaming playback, episode browsing, comments, and account synchronization are not included.
+- Demo streaming uses public sample video clips; these are not actual anime episodes or a licensed anime catalogue.
+- A real streaming provider must be integrated separately through the `StreamingRepository` abstraction and must supply authorized playback URLs.
+- Comments and account synchronization are not included.
 - This is a starter app, not a production-audited release.
