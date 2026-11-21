@@ -8,6 +8,6 @@ struct AnimeHubApp: App {
             MainTabView()
                 .preferredColorScheme(nil)
         }
-        .modelContainer(for: AnimeBookmark.self)
+        .modelContainer(for: [AnimeBookmark.self, EpisodeWatchProgress.self])
     }
 }
