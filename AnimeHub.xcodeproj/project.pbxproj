@@ -54,7 +54,7 @@
 /* Begin PBXNativeTarget section */
 		A10000000000000000000004 /* AnimeHub */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 034B774730B17631008A59B3 /* Build configuration list */;
+			buildConfigurationList = 034B774730B17631008A59B3 /* Build configuration list for PBXNativeTarget "AnimeHub" */;
 			buildPhases = (
 				A1000000000000000000000B /* Sources */,
 				A1000000000000000000000C /* Frameworks */,
@@ -128,10 +128,12 @@
 				DEVELOPMENT_TEAM = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.binod.animehub;
 				PRODUCT_NAME = AnimeHub;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -142,10 +144,12 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.binod.animehub;
 				PRODUCT_NAME = AnimeHub;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -166,7 +170,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		034B774730B17631008A59B3 /* Build configuration list */ = {
+		034B774730B17631008A59B3 /* Build configuration list for PBXNativeTarget "AnimeHub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				034B774530B175AA008A59B3 /* Debug */,
