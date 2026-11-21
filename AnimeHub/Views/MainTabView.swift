@@ -4,9 +4,14 @@ import Observation
 @Observable
 final class DependencyContainer {
     let repository: AnimeRepository
+    let streamingRepository: StreamingRepository
 
-    init(repository: AnimeRepository = DefaultAnimeRepository(api: JikanAPIClient())) {
+    init(
+        repository: AnimeRepository = DefaultAnimeRepository(api: JikanAPIClient()),
+        streamingRepository: StreamingRepository = DemoStreamingRepository()
+    ) {
         self.repository = repository
+        self.streamingRepository = streamingRepository
     }
 }
 
